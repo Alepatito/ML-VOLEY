@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento de Voleibol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        label {
+            font-weight: 400;
+        }
+
+        .form-select, .form-control, .btn {
+            border-radius: 10px;
+        }
+
+        .btn {
+            background: #ff6f61;
+            color: #fff;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e65b50;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container col-12 col-md-6">
+        <h1>Entrenamiento Personalizado</h1>
+        <form method="POST">
+            <!-- Nivel -->
+            <div class="form-group">
+                <label for="nivel">Selecciona tu nivel:</label>
+                <select class="form-select" name="nivel" id="nivel" required>
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+            </div>
+
+            <!-- Posición -->
+            <div class="form-group">
+                <label for="posicion">¿Qué posición juegas?</label>
+                <select class="form-select" name="posicion" id="posicion" required>
+                    <option value="armador">Armador</option>
+                    <option value="atacante">Atacante</option>
+                    <option value="libero">Libero</option>
+                    <option value="central">Central</option>
+                    <option value="punta">Punta</option>
+                    <option value="opuesto">Opuesto</option>
+                </select>
+            </div>
+
+            <!-- Objetivo -->
+            <div class="form-group">
+                <label for="objetivo">¿Cuál es tu objetivo principal?</label>
+                <input type="text" class="form-control" name="objetivo" id="objetivo" placeholder="Ej. Mejorar mi saque" required>
+            </div>
+
+            <!-- Tiempo -->
+            <div class="form-group">
+                <label for="tiempo">¿Cuánto tiempo tienes para practicar?</label>
+                <select class="form-select" name="tiempo" id="tiempo" required>
+                    <option value="menos de 2 horas">Menos de 2 horas por semana</option>
+                    <option value="entre 2 y 5 horas">Entre 2 y 6 horas por semana</option>
+                    <option value="más de 5 horas">Más de 6 horas por semana</option>
+                </select>
+            </div>
+
+            <!-- Botón de enviar -->
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+        <footer>
+            © 2024 - Tu Entrenador Digital de Voleibol
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
