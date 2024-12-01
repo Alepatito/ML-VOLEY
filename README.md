@@ -227,6 +227,40 @@ Codigo:
 
 - Accesibilidad
   - Etiquetas ```<label>``` asociadas a campos específicos para facilitar la navegación.
+ 
+
+
+
+
+# **Evaluación de Jugadores de Voleibol**
+
+## Descripción
+Este proyecto es una aplicación web construida con **Flask**, diseñada para evaluar y analizar las habilidades de jugadores de voleibol. Los usuarios pueden:
+- Ingresar información básica sobre su nivel, posición y metas.
+- Subir un video de su desempeño en la cancha.
+- Recibir retroalimentación inicial basada en su entrada.
+
+## Funcionalidades
+1. **Interfaz Dinámica**:
+   - Basada en Bootstrap para un diseño moderno y responsivo.
+   - Opciones intuitivas para seleccionar nivel, posición y metas.
+2. **Análisis de Video**:
+   - Uso de MediaPipe Pose para detectar movimientos y posturas.
+   - Visualización del video con puntos de referencia dibujados.
+3. **Fácil Configuración**:
+   - Requiere dependencias básicas instaladas con `pip`.
+
+## Requisitos
+- **Python**: 3.8 o superior
+- **Bibliotecas**: 
+  - Flask
+  - OpenCV
+  - MediaPipe
+
+Instalación:
+```bash
+pip install flask opencv-python mediapipe
+
 
 
 
